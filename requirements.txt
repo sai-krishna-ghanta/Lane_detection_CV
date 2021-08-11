@@ -1,5 +1,5 @@
 opencv-python
 numpy
 streamlit
-moviepy
+matplotlib
 pillow
