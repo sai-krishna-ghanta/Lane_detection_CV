@@ -1,7 +1,5 @@
 import numpy as np
 import cv2
-import matplotlib.pyplot as plt
-import matplotlib.image as mpimg
 from camera_calibration import calib, undistort
 from threshold import get_combined_gradients, get_combined_hls, combine_grad_hls
 from line import Line, get_perspective_transform, get_lane_lines_img, illustrate_driving_lane, illustrate_info_panel, illustrate_driving_lane_with_topdownview
