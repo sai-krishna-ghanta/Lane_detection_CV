@@ -2,3 +2,6 @@ libsm6
 libxrender1
 libfontconfig1
 libice6
+libatlas-base-dev
+python3-pyqt5
+
