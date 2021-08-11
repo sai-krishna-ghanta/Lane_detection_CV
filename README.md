@@ -1,7 +1,6 @@
 # Advanced Lane Detection for Self-Driving Cars
 
-[![Video White](output_videos/gif_out_track1.gif?raw=true)](https://youtu.be/Boe5HvpGnMQ)  
-> ***Click the GIF abobe for link to YouTube video of the result***
+[![Video White](output_videos/gif_out_track1.gif?raw=true)]
 
 ---
 
@@ -10,7 +9,6 @@
 * NumPy
 * CV2
 * matplotlib
-* glob
 * PIL
 * moviepy
 
@@ -145,8 +143,8 @@ Once we have already detected lane lines in an earlier frames, we can use that i
 Although, it is not always possible to detect lane lines from the history that is saved in Line class object. So if we lose track of the lines, we ca go back to the method of using thresholding and begin searching lane lines from scratch. <br />
 
 I do this using two functions:<br />
-* [line_search_reset](https://github.com/maunesh/advanced-lane-detection-for-self-driving-cars/blob/master/line.py#L114)
-* [line_search_tracking](https://github.com/maunesh/advanced-lane-detection-for-self-driving-cars/blob/master/line.py#L260)
+* [line_search_reset]
+* [line_search_tracking]
 <br />
 
 Below is the visualization of Sliding Window search: <br />
@@ -180,9 +178,6 @@ Here I am trying to determine the correct threshold values for Gradient in X dir
 ### 9. Illustrating Lane Lines on image/frames
 Once we have detected the lane lines, we can illustrate the lane on the current frame/image, by overlaying color pixels on top of the image. 
 I am illustrating Lane Lines, Measurement Info and the Birds-Eye View on each frame, using following functions: <br />
-* [illustrate_driving_lane](https://github.com/maunesh/advanced-lane-detection-for-self-driving-cars/blob/master/line.py#L370)
-* [illustrate_info_panel](https://github.com/maunesh/advanced-lane-detection-for-self-driving-cars/blob/master/line.py#L471)
-* [illustrate_driving_lane_with_topdownview](https://github.com/maunesh/advanced-lane-detection-for-self-driving-cars/blob/master/line.py#L498)
 
 <br />
 With everything combined, when we run the pipeline on an image, we get the follwing image as a final result.<br />
